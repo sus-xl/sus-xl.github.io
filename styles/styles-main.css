@@ -17,9 +17,11 @@ p{
 }
 
 
-
+/* index */
 .header{
-  color: #3deded;
-  height: 90vh;
-  background-color: #161616;
+  padding-top: 25vh;
+  padding-bottom: 20%;
+  color: #D9D8D7;
+  /* height: 60vh; */
+  /* background-color: #023059; */
 }
