@@ -1,10 +1,7 @@
 #project-header{
     background-color: aquamarine;
     height: 500px;
-    
 }
-
-
 
 /*SORTING NAV*/
 .portfolioFilter {
@@ -51,9 +48,9 @@
     transition: all 0.2s ease-in-out 0s;
 }
 
-.portfolioFilter a:hover{color: #18CDCA;}
+.portfolioFilter a:hover{color: #FF5349;}
 .portfolioFilter a:hover:before {
-    background-color: #18CDCA;
+    background-color: #FF5349;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
