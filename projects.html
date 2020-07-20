@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Xushan Li - Visual Designer</title>
+    
+    <!--RESET-->
+    <link rel="stylesheet" href="/styles/reset.css" type="text/css" media="all" />
+    
+    <!--DESCRIPTIONS-->
+    <meta name="description" content="graphic design portfolio of xushan li" /> 
+    <meta name="keywords" content="xushan li graphic designer graphicdesign" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!--META VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQUERY-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <!--SMOOTH SCROLL-->
+    <script src="/scripts/css-tricks-smooth-scroll.js"></script> 
+    
+    <!--INSERT PAGE BASED JS-->
+    <script src="/scripts/jquery.isotope.js" type="text/javascript"></script>
+    <script>
+     $(window).load(function(){
+        var $container = $('.portfolioContainer');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+
+        $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+             });
+             return false;
+        }); 
+    });
+    </script>
+
+    <!--SHIV-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--STYLE SHEETS-->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/portfolio-style.css" />
+
+</head>
+
+<body>
+    <header id="header">
+            <div id="logo">
+                <h1><a href="index.html" title="Home"><img src="images/logo.svg" alt=""></a></h1>
+            </div>
+
+            <nav id="menu" class="menu">
+                <ul class="sf-menu">
+                    <li><a href="projects.html" title="">Projects</a></li>
+                    <li><a href="about.html" title="">About</a></li>
+                </ul> 
+            </nav>
+            
+    </header>
+<!--
+    <div id="project-header">
+    <div class="container section1 center">
+        <h1>
+            Projects
+        </h1>
+    </div>
+    </div>
+-->
+    
+    <section>
+  
+    <section id="project" class="container">
+        <br>
+        <div class="portfolioFilter">
+            <a href="#" data-filter="*" class="current">All</a>
+            <a href="#" data-filter=".bran">Branding</a>
+            <a href="#" data-filter=".web">Web/UI</a>
+            <a href="#" data-filter=".illu">Illustrative</a>
+            <a href="#" data-filter=".ed">Editorial Design</a>
+            <a href="#" data-filter=".pac">Print/Package</a>
+        
+        </div>
+        <div class="clear"></div>
+        <div id="container" class="portfolioContainer">
+
+            
+            <div class="gallery-thumb bran illu pac" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-k9.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>K9</span> Purpose</h3>
+            <h5 class="description">Logo &amp; Package design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb bran web" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images//thumb-need-a-loan.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3>Need A <span>Loan</span></h3>
+            <h5 class="description">Logo, Web &amp; UI/UX design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb bran illu" >
+            <a href="projects/myo/myo-1.html">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-myo-01.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Myo</span> .01</h3>
+            <h5 class="description">Branding &amp; Illustration</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb bran illu" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-lr-inhouse.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Lowestrates</span> .01</h3>
+            <h5 class="description">In-house Design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb web illu" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-lr2-webproject.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Lowestrates</span> .02</h3>
+            <h5 class="description">Web projects</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb illu ed" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-lr3-editorial.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Lowestrates</span> .03</h3>
+            <h5 class="description">Digital Editorial Design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb web illu" >
+            <a href="projects/zenbev/zenbev.html">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-zenbev.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3>Zenbev</h3>
+            <h5 class="description">Web design &amp; Illustration</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb bran web" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-rank1st.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Rank</span>1st</h3>
+            <h5 class="description">Logo &amp; Web design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb bran web" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-kickstarterf.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Kickstarter</span> Finance</h3>
+            <h5 class="description">Logo, Icon, Web design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb bran web" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-primelink.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>PrimeLink</span> Insurance</h3>
+            <h5 class="description">Logo &amp; Web design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb pac" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-myo-02.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Myo</span> .02</h3>
+            <h5 class="description">Package design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb bran illu" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-thalm-01.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>ThalmicLabs</span> .01</h3>
+            <h5 class="description">In-house Design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb web" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-thalm-02.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>ThalmicLabs</span> .02</h3>
+            <h5 class="description">Site design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb bran" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-thalm-02.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Paper</span>haus</h3>
+            <h5 class="description">Logo design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            <div class="gallery-thumb bran" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-thalm-02.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Hasbro</span>redesign</h3>
+            <h5 class="description">Logo design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+            <div class="gallery-thumb illu" >
+            <a href="">
+            <figure class="thumb-effect">
+            <img src="/images/thumb-thalm-02.jpg" alt="Vector"/>
+            <figcaption id="des">
+            <h3><span>Birds</span></h3>
+            <h5 class="description">poster design</h5>
+            </figcaption>
+            </figure>
+            </a>
+            </div>
+            
+            
+    </div>
+    </section>
+</section>
+    
+    <div class="space"></div>
+    
+    <!--MOUSEFLOW-->
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/36b57aad-6216-41e3-95e4-a68a4a6a3758.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+    </body>
+</html>

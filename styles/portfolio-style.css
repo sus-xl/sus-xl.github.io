@@ -1,0 +1,206 @@
+#project-header{
+    background-color: aquamarine;
+    height: 500px;
+    
+}
+
+
+
+/*SORTING NAV*/
+.portfolioFilter {
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding-bottom: 10px;
+}
+
+
+.portfolioFilter a {
+    position: relative;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 2px 0;
+    color: #3d3d3d;
+    text-decoration:none;
+    
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+.portfolioFilter a.current {
+    border-bottom: solid 2px;
+    transition: all 0.2s;
+}
+
+
+.portfolioFilter a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.portfolioFilter a:hover{color: #18CDCA;}
+.portfolioFilter a:hover:before {
+    background-color: #18CDCA;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.portfolioContainer{
+    position:inherit;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+#project{
+    margin-top: 150px;
+}
+
+/*GALLERY THUMB STYLING*/
+
+
+.gallery-thumb{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 31%;
+    margin: 1%;   
+    
+    background-color: #0a0a31;
+    cursor: pointer;
+}
+
+.gallery-thumb:hover{
+    background: -webkit-linear-gradient(45deg, #3d3d3d 0%, #7e7e7e 100%);
+	background: linear-gradient(45deg, #172139 0%, #00082a 100%);
+}
+
+.gallery-thumb img{
+    position: relative;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.gallery-thumb:hover img{
+    opacity: 0.3;
+    filter:blur(3px);
+    -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.gallery-thumb figcaption{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    
+    text-align: center;
+    color: #fff;  
+}
+
+.gallery-thumb h3{
+    opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+.gallery-thumb:hover h3{
+    opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.gallery-thumb h5{
+    opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+.gallery-thumb:hover h5{
+    opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .gallery-thumb{
+        overflow: hidden;
+        background-color: #3d3d3d;
+        align-content: center;
+        width: 90%;
+        margin: 5%;
+        float: left;
+    }
+    .gallery-thumb img{
+        opacity: 0.3;
+    }
+    .gallery-thumb h5, .gallery-thumb h3{
+        opacity: 1;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+}
+/*TABLET*/
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .gallery-thumb{
+        overflow: hidden;
+        background-color: #3d3d3d;
+        align-content: center;
+        width: 48%;
+        margin: 1%;
+        float: left;
+
+    }
+}
+
+/*DESKTOP*/
+    @media only screen and (min-width: 768px) {
+    }
